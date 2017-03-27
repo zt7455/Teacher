@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="0dp"
+    android:orientation="vertical"
+    android:background="@color/griditems_bg" >
+
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/homework_finish_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:text="全部已完成"
+            android:textColor="@color/text_dark2"
+            android:textSize="14sp" />
+    </RelativeLayout> 
+
+
+</LinearLayout>

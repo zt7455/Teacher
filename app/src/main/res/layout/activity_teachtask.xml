@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e8eb"
+    android:orientation="vertical" >
+
+    <com.shengliedu.teacher.teacher.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.teacher.teacher.view.CustomTitle>
+
+    <LinearLayout
+        android:id="@+id/nianjikemu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="语文-五年级"
+            android:textColor="#727678"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/teach_task_icon" />
+    </LinearLayout>
+
+   <!--  <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/banxing_lin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:background="#e4e8eb"
+            android:orientation="horizontal"
+            android:padding="20dp" >
+        </LinearLayout>
+    </HorizontalScrollView>
+ -->
+ <HorizontalScrollView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+        android:scrollbars="none" >
+
+        <RadioGroup
+            android:id="@+id/bx_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </RadioGroup>
+    </HorizontalScrollView>
+    <ListView
+        android:id="@+id/teachtask_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:listSelector="#00000000"
+        android:dividerHeight="0.5dp"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

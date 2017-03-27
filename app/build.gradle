@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+//            30:A2:76:AA:55:99:A0:2A:7D:12:42:03:8D:1F:D9:96:91:8D:10:73
+            keyAlias 'teacher'
+            keyPassword 'android'
+            storeFile file('C:/Users/zt10/shenglieduteacher.jks')
+            storePassword 'android'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.shengliedu.teacher.teacher"
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0.8"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {abiFilters "armeabi", "armeabi-v7a", "x86", "mips" }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:design:25.0.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.squareup.okio:okio:1.11.0'
+    compile 'com.alibaba:fastjson:1.2.24'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.belerweb:pinyin4j:2.5.1'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.google.zxing:android-core:3.3.0'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile files('libs/asmack-android-17-0.8.10.jar')
+    compile files('libs/zxing.jar')
+    compile project(':android-pdfview')
+    compile project(':library')
+    compile files('libs/baidumapapi_base_v4_2_0.jar')
+    compile files('libs/baidumapapi_cloud_v4_2_0.jar')
+    compile files('libs/baidumapapi_map_v4_2_0.jar')
+    compile files('libs/baidumapapi_radar_v4_2_0.jar')
+    compile files('libs/baidumapapi_search_v4_2_0.jar')
+    compile files('libs/baidumapapi_util_v4_2_0.jar')
+    compile project(':jcvideoplayer-lib')
+    compile 'it.sephiroth.android.library.picasso:picasso:2.5.2.4b'
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.shengliedu.teacher.teacher.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.teacher.teacher.view.CustomTitle>
+
+    <RelativeLayout
+        android:id="@+id/bottom_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/circle_green_bg"
+            android:gravity="center"
+            android:text="拍照"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/p"
+            android:background="@mipmap/circle_green_bg"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/p"
+            android:background="@mipmap/circle_green_bg"
+            android:gravity="center"
+            android:text="上传"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/i"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_lin"
+        android:layout_below="@id/ctitle" />
+
+</RelativeLayout>

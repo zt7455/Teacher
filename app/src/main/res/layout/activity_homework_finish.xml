@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e8eb"
+    android:orientation="vertical" >
+
+    <com.shengliedu.teacher.teacher.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.teacher.teacher.view.CustomTitle>
+
+    <ListView
+        android:id="@+id/homework_finish_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:divider="#00000000"
+        android:dividerHeight="15dp"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

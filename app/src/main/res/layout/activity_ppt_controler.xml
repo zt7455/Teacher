@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginback" >
+
+    <com.shengliedu.teacher.teacher.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.teacher.teacher.view.CustomTitle>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ctitle"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/classroom_control_esc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@mipmap/classroom_control_no_esc" />
+
+            <Button
+                android:id="@+id/classroom_control_last_item"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/classroom_control_last_press" />
+
+            <Button
+                 android:id="@+id/classroom_control_next_item"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/classroom_control_next_press" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/classroom_control_last_page"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/classroom_control_last_page_press" />
+
+        <Button
+             android:id="@+id/classroom_control_next_page"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/classroom_control_next_page_press" />
+    </LinearLayout>
+
+</RelativeLayout>

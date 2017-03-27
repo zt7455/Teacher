@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:textSize="15sp" />
+
+ <!--    <com.shengliedu.teacher.teacher.view.ResultListView
+        android:id="@+id/resultListView_H"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="false"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:descendantFocusability="afterDescendants"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:overScrollMode="never"
+        android:saveEnabled="false"
+        /> -->
+    <com.shengliedu.teacher.teacher.view.NoScrollGridView
+        android:id="@+id/resultListView_H"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:gravity="center"
+       	android:horizontalSpacing="2dp"
+       	android:verticalSpacing="2dp"
+        android:divider="#00000000"
+        android:dividerHeight="2dp"
+        android:scrollbars="none" >
+    </com.shengliedu.teacher.teacher.view.NoScrollGridView>
+</LinearLayout>

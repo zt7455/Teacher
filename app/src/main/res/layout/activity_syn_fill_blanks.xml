@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginback"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <com.shengliedu.teacher.teacher.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.teacher.teacher.view.CustomTitle>
+
+    <ScrollView
+        android:id="@+id/syn_question_titlescroll"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/ctitle" >
+
+        <LinearLayout
+            android:id="@+id/synsingleLin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/syn_question_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_margin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/logintext" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/syn_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/seagreen" >
+
+        <Button
+            android:id="@+id/jiexi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:text="查看解析"
+            android:textColor="@color/seagreen"
+            android:textSize="@dimen/logintext" />
+    </LinearLayout>
+
+
+</RelativeLayout>

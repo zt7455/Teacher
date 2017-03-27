@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/person_center"
+    android:background="#ffffff" >
+ <com.shengliedu.teacher.teacher.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.teacher.teacher.view.CustomTitle>
+    
+    <GridView
+        android:id="@+id/grid_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="#00000000"
+        android:layout_below="@id/ctitle"
+        android:scrollbars="none"
+        android:numColumns="4" >
+    </GridView>
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.shengliedu.teacher.teacher.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.teacher.teacher.view.CustomTitle>
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#727678"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/title_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/teacher1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="教学导入"
+            android:textColor="@drawable/rb_text_color"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/teacher2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="教学过程"
+            android:textColor="@drawable/rb_text_color"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/teacher3"
+             android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="教学反思"
+            android:textColor="@drawable/rb_text_color"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" >
+    </FrameLayout>
+	<RadioGroup 
+	    android:id="@+id/pj_rg"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+	    >
+	    <RadioButton
+	        android:id="@+id/pj_rb_you"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:checked="true"
+            android:textColor="@drawable/rb_text_color"
+            android:text="优"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/pj_rb_liang"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="良"
+            android:textColor="@drawable/rb_text_color"
+            android:textSize="16sp" />
+
+        <RadioButton
+             android:id="@+id/pj_rb_hege"
+             android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="合格"
+            android:textColor="@drawable/rb_text_color"
+            android:textSize="16sp" />
+	</RadioGroup>
+</LinearLayout>

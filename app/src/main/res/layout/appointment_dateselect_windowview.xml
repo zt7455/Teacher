@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/button_cacel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/shape_pink_round"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+             android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="请选择跳转日期"
+            android:textColor="#727678"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/button_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_green_round"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+             android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/select_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="-2dp"
+                android:text="年"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <com.shengliedu.teacher.teacher.view.PickerView
+                android:layout_marginTop="10dp"
+                android:id="@+id/appoint_date_year"
+                android:layout_width="120dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+         <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="-2dp"
+                android:text="月"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <com.shengliedu.teacher.teacher.view.PickerView
+                android:layout_marginTop="10dp"
+                android:id="@+id/appoint_date_month"
+                android:layout_width="120dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="-2dp"
+                android:text="日"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <com.shengliedu.teacher.teacher.view.PickerView
+                android:layout_marginTop="10dp"
+                android:id="@+id/appoint_date_day"
+                android:layout_width="120dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

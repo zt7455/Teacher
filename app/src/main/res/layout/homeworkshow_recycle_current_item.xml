@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- <com.shengliedu.teacher.teacher.view.ResultListView
+        android:id="@+id/resultListView_C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        /> -->
+     <com.shengliedu.teacher.teacher.view.NoScrollListview
+        android:id="@+id/resultListView_C"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@mipmap/line_h"
+        android:dividerHeight="0.5dp"
+        android:scrollbars="none" >
+    </com.shengliedu.teacher.teacher.view.NoScrollListview>
+</LinearLayout>

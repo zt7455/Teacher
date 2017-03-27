@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homework_show_item"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+     >
+
+    <ImageView
+        android:id="@+id/homework_show_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@mipmap/index_item_back"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/homework_show_item_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#50ffffff"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true" >
+        <TextView
+            android:id="@+id/homework_show_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="李明"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</RelativeLayout>

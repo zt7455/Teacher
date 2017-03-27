@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+
+        <TextView 
+            android:id="@+id/tv_lv_item_name2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="周华健"
+            android:textSize="19sp"/>
+        <TextView
+            android:id="@+id/qipao2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@mipmap/index" />
+        <TextView 
+            android:id="@+id/tv_lv_item_pj2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="15dp"
+            android:textSize="19sp"
+            android:text="优"/>
+        
+         
+
+</LinearLayout>

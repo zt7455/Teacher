@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/black" >
+
+    <RelativeLayout
+        android:id="@+id/hei"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+        <Button
+            android:id="@+id/btn_close_photo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@mipmap/p_leave_no" />
+    </RelativeLayout>
+
+    <com.shengliedu.teacher.teacher.view.PhotoView
+        android:id="@+id/see_photoview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginback" >
+
+    <com.shengliedu.teacher.teacher.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.teacher.teacher.view.CustomTitle>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ctitle"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/mainLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/select_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/logintext" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/questionLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/select_question"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/selecttext" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/record_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="www.baidu.com "
+                android:textColor="@color/blue"
+                android:textSize="@dimen/selecttext"
+                android:textStyle="italic"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/record_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/selecttext"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/record_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="附件 "
+                android:textColor="@color/blue1"
+                android:textSize="@dimen/selecttext"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/select_answer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/selecttext" />
+            <TextView
+                android:id="@+id/select_pdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_margin"
+                android:textColor="@color/blue1"
+                android:textSize="@dimen/logintext" />
+            <TextView
+                android:id="@+id/select_wrong"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/selecttext" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

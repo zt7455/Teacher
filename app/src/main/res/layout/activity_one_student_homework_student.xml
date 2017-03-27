@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"  >
+
+    <com.shengliedu.teacher.teacher.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.teacher.teacher.view.CustomTitle>
+
+    <LinearLayout
+        android:id="@+id/p_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_py"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:background="#ecf0ef"
+            android:gravity="top|left"
+            android:padding="3dp"
+            android:hint="评价本次作业"
+            android:textSize="14sp"
+            android:inputType="text" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/p_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:src="@mipmap/p_ok" />
+            <ImageView
+                android:id="@+id/p_ok2"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/p_ok" />
+            <ImageView
+                android:id="@+id/p_last"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/p_ok2"
+                android:src="@mipmap/p_last" />
+            <ImageView
+                android:id="@+id/p_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                 android:layout_toRightOf="@id/p_ok2"
+                android:src="@mipmap/p_next" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/p_lin"
+        android:layout_below="@id/ctitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:listSelector="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="10dp"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

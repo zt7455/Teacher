@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/devider1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/seagreen" />
+    <com.shengliedu.teacher.teacher.view.MyButton
+        android:id="@+id/take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@android:color/transparent"
+        android:text="拍照"
+        android:textSize="18sp"
+        android:layout_below="@+id/devider1"
+         />
+
+    <TextView
+        android:id="@+id/devider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/take_photo"
+        android:background="#f2f2f2" 
+        />
+
+    <com.shengliedu.teacher.teacher.view.MyButton
+        android:id="@+id/xiangce"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/devider"
+        android:background="@android:color/transparent"
+        android:text="从手机相册选择"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/devider2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/xiangce"
+        android:background="#f3f3f3" />
+
+    <com.shengliedu.teacher.teacher.view.MyButton
+        android:id="@+id/quxiao"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/devider2"
+        android:background="@android:color/transparent"
+        android:text="取消"
+        android:textSize="18sp" />
+
+</RelativeLayout>

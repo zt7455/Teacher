@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ecf0ef"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/homework_finish_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="早读课"
+            android:textColor="@color/text_dark2"
+            android:textSize="16sp" />
+         <TextView
+            android:id="@+id/homework_finish_item_luping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:textColor="@color/text_dark2"
+            android:textSize="14sp" />
+          <TextView
+            android:id="@+id/homework_finish_item_part"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/homework_finish_item_luping"
+            android:padding="5dp"
+            android:textColor="@color/text_dark2"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <com.shengliedu.teacher.teacher.view.NoScrollListview
+        android:id="@+id/homework_finish_item_list"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dddddd"
+        android:padding="5dp" 
+        >
+    </com.shengliedu.teacher.teacher.view.NoScrollListview>
+    <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/homework_finish_item_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:text="全部已完成"
+            android:textColor="@color/text_dark2"
+            android:textSize="14sp" />
+    </RelativeLayout> -->
+
+</LinearLayout>

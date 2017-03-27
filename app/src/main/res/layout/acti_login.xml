@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<com.shengliedu.teacher.teacher.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.teacher.teacher.view.CustomTitle>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <!--
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.d3.d3xmpp.util.CircularImage
+                android:id="@+id/headImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+           		android:scaleType="fitXY"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@color/transparent_background" />
+
+        </LinearLayout>
+        -->
+
+        <EditText
+            android:id="@+id/nameText"
+            style="@style/input"
+            android:drawableLeft="@mipmap/login_account_icon"
+            android:drawablePadding="2dp"
+            android:hint="@string/register_name" />
+
+        <EditText
+            android:id="@+id/pwdText"
+            style="@style/input"
+            android:drawableLeft="@mipmap/login_psd_icon"
+            android:drawablePadding="2dp"
+            android:hint="@string/register_password"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical" >
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@mipmap/login_check"
+                android:checked="false"
+                android:text="@string/login_chack"
+                 />
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/loginBtn"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/login"
+                    android:text="@string/login_str"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

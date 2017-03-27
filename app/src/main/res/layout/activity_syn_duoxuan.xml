@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginback"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <com.shengliedu.teacher.teacher.view.CustomTitle
+        android:id="@+id/ctitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.shengliedu.teacher.teacher.view.CustomTitle>
+
+    <LinearLayout
+        android:id="@+id/syn_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/seagreen" >
+
+        <TextView
+            android:id="@+id/zhengquelv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/jiexi"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:text="查看解析"
+            android:textColor="@color/seagreen"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/syn_question_titlescroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/syn_linear"
+        android:layout_below="@id/ctitle"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/suoxuanLin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/syn_question_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_margin"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/select_pdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_margin"
+                android:textColor="@color/blue1"
+                android:textSize="@dimen/logintext" />
+
+            <LinearLayout
+                android:id="@+id/xuanxianglinear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/syn_question_titlescroll"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选项："
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/syn_question_pandun"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <com.shengliedu.teacher.teacher.view.NoScrollListview
+                android:id="@+id/syn_question_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:listSelector="#00000000" >
+            </com.shengliedu.teacher.teacher.view.NoScrollListview>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

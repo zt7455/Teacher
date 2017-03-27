@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/seagreen"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+
+
+        <TextView
+            android:id="@+id/correct_homework_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="8:00~8:20"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/correct_homework_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"
+            android:text="早读课"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <!-- <TextView
+            android:id="@+id/correct_homework_item_yipigai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:text="巡堂"
+            android:textColor="@color/white"
+            android:textSize="14sp" /> -->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/keqian_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/correct_homework_item_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="课前作业"
+            android:textColor="@color/text_dark2"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/correct_homework_item_pigai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_green_round"
+            android:padding="5dp"
+            android:text="批改\n作业"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/correct_homework_item_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/correct_homework_item_pigai"
+            android:background="@drawable/shape_blue_round"
+            android:padding="5dp"
+            android:text="查看\n作业"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/correct_homework_item_browse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/correct_homework_item_look"
+            android:background="@drawable/shape_pink_round"
+            android:padding="5dp"
+            android:text="作业\n总览"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/kehou_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="课后作业"
+            android:textColor="@color/text_dark2"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/correct_homework_item_pigai2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_green_round"
+            android:padding="5dp"
+            android:text="批改\n作业"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/correct_homework_item_look2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/correct_homework_item_pigai2"
+            android:background="@drawable/shape_blue_round"
+            android:padding="5dp"
+            android:text="查看\n作业"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/correct_homework_item_browse2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/correct_homework_item_look2"
+            android:background="@drawable/shape_pink_round"
+            android:padding="5dp"
+            android:text="作业\n总览"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>
